@@ -28,8 +28,8 @@ var pointSize = 40;
 var pointSpacing = 50;
 var margin = 50;
 var colors = [
-    "#3f51b5",
-    "#0339f5",
+    "#333333",
+    "##000000",
     "#e31e63",
     "#fec107"
 ];
