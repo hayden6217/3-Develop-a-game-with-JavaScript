@@ -10,18 +10,24 @@ function setup(){
 }
 
 function draw(){
-    background("yellow");
+    updateGameState(game);
+
+    if (game.isDead)
+        background("black");
+    else
+        background("yellow");
+        
     drawGameState(game);
 }
 
 // converts logical grid into physical display
 function drawPoint(x,y,colorIndex){
     fill(colors[colorIndex]);
-    var jitter = random(5)
+    var jitter = random(5);
     ellipse(
         x * pointSpacing + margin,
         y * pointSpacing + margin,
-        pointSize);
+        pointSize + jitter);
 }
 
 // physical units
@@ -29,10 +35,10 @@ var pointSize = 40;
 var pointSpacing = 50;
 var margin = 50;
 var colors = [
-    "#111111",
-    "#222222",
-    "#333333",
-    "#444444"
+    "#3f51b5",
+    "#03a9f5",
+    "#ea1e63",
+    "#fec107"
 ];
 
 function keyPressed() {
@@ -47,4 +53,3 @@ function keyPressed() {
 
     if (game.playerX < 0) game.playerX = game.cols - 1;
     if (game.playerY < 0) game.playerY = game.rows - 1;
-}
