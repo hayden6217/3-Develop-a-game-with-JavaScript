@@ -28,10 +28,10 @@ var pointSize = 40;
 var pointSpacing = 50;
 var margin = 50;
 var colors = [
-    "#333333",
-    "##000000",
-    "#e31e63",
-    "#fec107"
+    "#000000",
+    "#000000",
+    "#000000",
+    "#000000"
 ];
 
 function keyPressed() {
