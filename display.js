@@ -35,8 +35,8 @@ var colors = [
 
 function keyPressed() {
     console.log(`keyPressed: ${keyCode}`);
-    if (keycode == 38) game.playerY--;
-    if (keycode == 40) game.playerY++;
-    if (keycode == LEFT_ARROW) game.playerX--;
-    if (keycode == RIGHT_ARROW) game.playerX++;
+    if (keyCode == 38) game.playerY--;
+    if (keyCode == 40) game.playerY++;
+    if (keyCode == LEFT_ARROW) game.playerX--;
+    if (keyCode == RIGHT_ARROW) game.playerX++;
 }
